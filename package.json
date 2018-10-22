@@ -1,0 +1,17 @@
+{
+  "name": "attire_plus",
+  "version": "1.0.0",
+  "description": "Agilis szoftverfejlesztés házi feladat.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "jscs": "jscs middleware models routes test index.js",
+    "jshint": "jshint middleware models routes test index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
