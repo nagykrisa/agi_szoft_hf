@@ -28,4 +28,6 @@ node_modules
 
 # idea settings
 .idea
-.vscode
+
+# DotEnv variables
+.env

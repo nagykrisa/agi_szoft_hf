@@ -1,8 +1,7 @@
-﻿var express = require('express');
-var app = express();
+﻿const { port, env } = require('./config/vars');
+const mongoose = require('./config/mongoose');
+const app = require('./config/express');
 
-app.use(express.static('static'));
+mongoose.connect();
 
-var server = app.listen(3000, function () {
-    console.log('App running on: localhost:3000/');
-});
+app.listen(port, () => console.log(`App running on: localhost:${port} env: ${env}`));
