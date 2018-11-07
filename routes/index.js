@@ -10,7 +10,7 @@ const routes = require('require-all')({
 
 _.mapValues(routes, (value, key) => {
   const path = key.replace('Routes', '');
-  router.use(`/${path}`, value);
+  router.use(`/api/${path}`, value);
 });
 
 module.exports = router;
